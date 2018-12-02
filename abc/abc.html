@@ -34,7 +34,7 @@
     </div>
   </div>
   <div class="team-component">
-      <div class="team-member" v-if='names[0].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[0].toLowerCase().includes(searched)' @click="show_description(0)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">caleb@abc.co.ke</div>
@@ -47,8 +47,11 @@
           <span>Caleb Mwangi</span>
           <span>CEO</span>
         </div>
+        <div class="team-description" id="team_description0">
+          Caleb has been CEO at ABC for the past 4 years, leading and growing the company froma small market solutions company to the market behemoth it is now. Caleb studied Marketing and Economics in the University of Nairobi.
+        </div>
       </div>
-      <div class="team-member" v-if='names[1].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[1].toLowerCase().includes(searched)' @click="show_description(1)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">Wilberforce@abc.co.ke</div>
@@ -62,8 +65,11 @@
           <span>Wilberforce Wepukhulu</span>
           <span>SVP Operations</span>
         </div>
+        <div class="team-description" id="team_description1">
+          Wilberforce runs the operations depaertment within ABC. He has promoted seemless intergration of all ABC operations.
+        </div>
       </div>
-      <div class="team-member" v-if='names[2].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[2].toLowerCase().includes(searched)' @click="show_description(2)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">skye@abc.co.ke  </div>
@@ -77,8 +83,11 @@
           <span>Skye Wanjeri</span>
           <span>VP Advertising</span>
         </div>
+        <div class="team-description" id="team_description2">
+          Skye has run ABC's marketing team for the past 2 years. Growing ABC's footprint through out the country.
+        </div>
       </div>
-      <div class="team-member" v-if='names[3].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[3].toLowerCase().includes(searched)' @click="show_description(3)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">Hassan@abc.co.ke</div>
@@ -92,14 +101,16 @@
           <span>Hassan Mdoe</span>
           <span>SVP Technology</span>
         </div>
+        <div class="team-description" id="team_description3">
+          Hassan possess a keen understanding of development operations and technology trends. He has created the core of ABC's operations allowing the company to maintain an efficient and growing database.
+        </div>
       </div>
-      <div class="team-member" v-if='names[4].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[4].toLowerCase().includes(searched)' @click="show_description(4)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">agatha@abc.co.ke</div>
             <div class="team-border"></div>
             <div class="team-number">0734987124</div>
-
           </div>
           <a href="#"><img src="./images/p5.png" alt="" class="team-image"></a>
         </div>
@@ -107,8 +118,11 @@
           <span>Agatha Mwakidedi</span>
           <span>VP Major Accounts</span>
         </div>
+        <div class="team-description" id="team_description4">
+          Agatha is a seasoned sales executive in the digital marketing and technology markets. She holds a degree in Marketing and Customer Relations from Catholic University.
+        </div>
       </div>
-      <div class="team-member" v-if='names[5].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[5].toLowerCase().includes(searched)' @click="show_description(5)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">mutheu@abc.co.ke</div>
@@ -122,8 +136,11 @@
           <span>Scholastica Mutheu</span>
           <span>Human Resources</span>
         </div>
+        <div class="team-description" id="team_description5">
+          Mutheu has run the human resource departement for several multinational companies She brings a homely but organised management system to ABC.
+        </div>
       </div>
-      <div class="team-member" v-if='names[6].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[6].toLowerCase().includes(searched)' @click="show_description(6)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">kalembe@abc.co.ke</div>
@@ -137,8 +154,11 @@
           <span>Kalembe Ndile</span>
           <span>VP Sales</span>
         </div>
+        <div class="team-description" id="team_description6">
+          Kalembe Ndile is the newest addition to ABC. Nonetheless he brings an interesting touch to a previously mundane department.
+        </div>
       </div>
-      <div class="team-member" v-if='names[7].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[7].toLowerCase().includes(searched)' @click="show_description(7)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">nathaniel@abc.co.ke</div>
@@ -152,8 +172,11 @@
           <span>Nathaniel Wambugu</span>
           <span>VP Customer Experience</span>
         </div>
+        <div class="team-description" id="team_description7">
+          Nathaniel, the head of Customer Experience has a  wealth of experience creatin and maintaining customer relations. He comes with a degree in Art and literature from Kabarak University.
+        </div>
       </div>
-      <div class="team-member" v-if='names[8].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[8].toLowerCase().includes(searched)' @click="show_description(8)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">han@abc.co.ke</div>
@@ -166,8 +189,11 @@
           <span>Han Bei</span>
           <span>Corporate Development</span>
         </div>
+        <div class="team-description" id="team_description8">
+          Han has a knack for analysis and planning, helping guide the company towards the right markets and practices.
+        </div>
       </div>
-      <div class="team-member" v-if='names[9].toLowerCase().includes(searched)'>
+      <div class="team-member" v-if='names[9].toLowerCase().includes(searched)' @click="show_description(9)">
         <div class="team-info">
           <div class="team-hover">
             <div class="team-email">kamlesh@abc.co.ke</div>
@@ -181,6 +207,9 @@
           <span>Kamlesh Patni</span>
           <span>Customer Success</span>
         </div>
+        <div class="team-description" id="team_description9">
+          Kamlesh ensures all clients are content and receive maximum value from  ABC's products. The amount of effort he puts in to customer satisfaction has ensured near 100% retention of clients.
+        </div>
       </div>
     </div>
   </div>
@@ -190,8 +219,25 @@
     var app = new Vue({
       el: '#app',
       data: {
+        showing: '',
         searched: '',
         names: ["Caleb Mwangi", "Wilberforce Wepukhulu", "Skye Wanjeri", "Hassan Mdoe", "Agatha Mwakidedi", "Scholastica Mutheu", "Kalembe Ndile", "Nathaniel Wambugu", "Han Bei", "Kamlesh Patni"],
+      },
+      methods: {
+        show_description: function(number) {
+          var id = 'team_description' + number;
+          var el = document.getElementById(id);
+          if (el.style.display == "none" || el.style.display == "") {
+            if (this.showing != '') {
+              var hide = document.getElementById(this.showing);
+              hide.style.display = "none";
+            }
+            el.style.display = "block";
+            this.showing = id;
+          } else {
+              el.style.display = "none";
+          }
+        }
       }
     })
   </script>
