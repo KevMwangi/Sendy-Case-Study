@@ -203,6 +203,7 @@ a
 .team-description
 {
   position: absolute;
+  text-align: center;
   background-color: #1e272e;
   height: 50px;
   color: #fff;
