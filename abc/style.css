@@ -4,6 +4,13 @@ body
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
 }
+a
+{
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+  color: #42b983;
+}
 .logo{
   background-color:#1e272e;
   overflow: hidden;
@@ -50,7 +57,7 @@ body
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex: 1.3;
+  flex: 1.5;
   min-height: 130px;
   font-size: 40px;
 }
@@ -113,11 +120,40 @@ body
 .team-info
 {
   display: flex;
+  position: relative;
   flex-direction: column;
   font-weight: 600;
   justify-content: space-around;
   min-height: 45px;
   align-items: center;
+}
+.team-border
+{
+  height: 3px;
+  margin: 20px;
+  width: 70px;
+  background-color: #333;
+}
+.team-hover
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  background-color: #fff;
+  left: 55px;
+  z-index: 90;
+  opacity: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+}
+.team-hover:hover
+{
+  opacity: 0.9;
 }
 .search-box
 {
@@ -135,6 +171,7 @@ body
   font-family: 'Josefin Sans', sans-serif !important;
   line-height: 1.5;
   height: 16px;
+  margin-top: 5px;
   background-color: transparent;
   border: none;
   color: #fff;
