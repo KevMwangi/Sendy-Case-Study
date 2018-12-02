@@ -229,7 +229,9 @@
           if (el.style.display == "none" || el.style.display == "") {
             if (this.showing != '') {
               var hide = document.getElementById(this.showing);
-              hide.style.display = "none";
+              if (hide != null) {
+                hide.style.display = "none";
+              }
             }
             el.style.display = "block";
             this.showing = id;
