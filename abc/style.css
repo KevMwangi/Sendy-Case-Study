@@ -1,0 +1,85 @@
+body
+{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.logo{
+  background-color:#1e272e;
+  overflow: hidden;
+  display: flex;
+}
+.icon
+{
+  display: flex;
+  flex: 2;
+}
+.navbar
+{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar-item
+{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  transition: all .3s ease-in-out;
+}
+.navbar-item:hover
+{
+  background-color: #ffd32a;
+  transition: all .3s ease-in-out;
+}
+.navbar-item:hover  a
+{
+  transition: all .3s ease-in-out;
+  color: #333;
+}
+.abc-logo{
+  float:left;
+  width:100px;
+  height:100px;
+}
+.search-bar
+{
+  min-height: 40px;
+  padding: 10px;
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 30px;
+}
+.team-sections
+{
+    background-color: #d2dae2;
+}
+.team-component
+{
+  height: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 40px;
+  background-color: #d2dae2;
+}
+.team-image
+{
+  border-radius: 50%;
+  margin: 0px 40px;
+  width: 250px;
+  height: 250px;
+  transition: 1s;
+  overflow: hidden;
+}
+.team-info
+{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
